@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="node_modules/web3/dist/web3.min.js"></script>
+</head>
+<body>
+    <h1>Contract</h1>
+    <input type="number" id="ticket-amount" placeholder="Enter the amount">
+    <button id="entryid">Enter into the Lottery</button>
+    <p><strong>Status: </strong></p><p id="entry-status">Not entered yet.</p>
+
+    <h2>List of players:</h2>
+    <p id="players-details"></p>
+
+    <hr>
+    <h2>Pick Winner (only for Contract Manager)</h2>
+    <button id="pick-winner-button">Pick Winner</button>
+    <p><strong>Status: </strong></p><p id="winner-status">Winner not yet declared.</p>
+    <script src="app.js"></script>
+</body>
+</html>
